@@ -24,9 +24,9 @@ var lib = app.lib.init({ update: update });
 
 function update(){
 	stats.begin();
-	lib.preGl.clear();
 	lib.postRightGl.clear();
 	lib.postGl.clear();
+	lib.preGl.clear();
 	lib.cameraControl.update();
 
 	lib.renderer.drawScene(scene, lib.camera);
